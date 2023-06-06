@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F6F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark, h1 , h2 , .num , #submit {
+    font-weight: 700;
+}
+
+p , h3 , a {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 3.851rem;
+    color: #222731;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#switch , .header , .sectionStart , .link , .about , .footer {
+    display: flex;
+}
+
+#switch {
+    gap: 1.6rem;
+}
+
+#switch img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#search {
+    width: 1.768rem;
+    height: 1.763rem;
+    left: 1.5rem;
+}
+
+input {
+    border: 0;
+}
+
+.user {
+    background-color: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    width: 32.7rem;
+    height: 6rem;
+    padding-left: 4.5rem;
+    line-height: 2.5rem;
+}
+
+.dark {
+    color: #4B6A9B;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 1.925rem;
+    letter-spacing: .25rem;
+}
+
+#form {
+    width: 100%;
+    position: relative;
+    margin: 3.5rem 0 1.6rem 0;
+}
+
+#search , #submit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.user::placeholder {
+    color: #4B6A9B;
+}
+
+#submit {
+    /* margin-left: -8.5rem; */
+    right: .7rem;
+    background-color: #0079FF;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    line-height: 2.073rem;
+    padding: 1.25rem 1.4rem 1.25rem 1.8rem;
+}
+
+.section {
+    background-color: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    padding: 3.2rem 2.4rem 4.8rem 2.4rem;
+    border-radius: 1.5rem;
+}
+
+.sectionStart {
+    align-items: center;
+    gap: 1.9rem;
+}
+
+.sectionStart img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 2.37rem;
+    color: #2B3442;
+}
+
+h3, #join {
+    font-size: 1.3rem;
+    line-height: 1.925rem;
+    color: #0079FF;
+}
+
+#join {
+    color: #697C9A;
+    margin-top: .6rem;
+}
+
+#bio {
+    max-width: 26.4rem;
+    margin: 3.3rem 0 2.3rem 0;
+    font-size: 1.3rem;
+    color: #4B6A9B;
+    line-height: 2.5rem;
+}
+
+.about {
+    justify-content: space-around;
+    padding: 1.8rem 1.4rem 1.9rem 1.5rem;
+    background-color: #F6F8FF;
+    border-radius: 1rem;
+    margin-bottom: 2.4rem;
+}
+
+.review {
+    font-size: 1.1rem;
+    line-height: 1.629rem;
+    color: #4B6A9B;
+}
+
+.num {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.37rem;
+    color: #2B3442;
+    margin-top: .8rem;
+}
+
+.link , #link , #twitter , #company {
+    gap: 1.3rem;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #4B6A9B;
+    line-height: 1.925rem;
+}
+
+#address {
+    font-style: normal;
+}
+
+.link img {
+    width: 2rem;
+}
+
+.none {
+    display: none;
+    fill: white;
+}
+
+.footer {
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+
+.darkMode {
+    background-color: #141D2F;
+}
+
+.darkModeSecond {
+    box-shadow: none;
+    background-color: #1E2A47;
+}
+
+#empty {
+    font-size: 1.5rem;
+    color: #F74646;
+    line-height: 2.222rem;
+    position: absolute;
+    right: 10rem;
+    top: 1.8rem;
+    display: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .user {
+        font-size: 1.8rem;
+        width: 57.3rem;
+        height: 6.9rem;
+        padding-left: 8rem;
+    }
+    #search {
+        width: 2.122rem;
+        height: auto;
+        left: 3rem;
+    }
+    #submit {
+        font-size: 1.6rem;
+        line-height: 2.37rem;
+        padding: 1.25rem 2.3rem 1.35rem 2.4rem;
+    }
+    .sectionStart {
+        gap: 4.1rem;
+    }
+    .sectionStart img {
+        width: 11.7rem;
+        height: 11.7rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+        line-height: 3.851rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+        line-height: 2.37rem;
+        margin-top: .3rem;
+    }
+    #join {
+        font-size: 1.5rem;
+        line-height: 2.222rem;
+    }
+    #bio {
+        font-size: 1.5rem;
+        max-width: 48.9rem;
+        margin: 2.4rem 0 3.2rem 0;
+    }
+    .review {
+        font-size: 1.3rem;
+        line-height: 1.925rem;
+    }
+    .num {
+        font-size: 2.2rem;
+        line-height: 3.258rem;
+        text-align: left;
+    }
+    .about {
+        padding: 1.5rem 9.6rem 1.7rem 1.2rem;
+        margin-bottom: 3rem;
+    }
+    .section {
+        padding: 4rem;
+        max-width: 57.3rem;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        gap: 3.1rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .link, #link, #twitter, #company {
+        font-size: 1.5rem;
+    }
+    #form {
+        margin-bottom: 2.4rem;
+    }
+    .opacity {
+        order: -1;
+    }
+    .first {
+        order: -2;
+    }
+    #empty {
+        right: 13rem;
+        top: 2rem;
+        font-size: 2rem;
+    }
+}
+
+
+@media (min-width:1440px) {
+    .user {
+        width: 73rem;
+    }
+    .section {
+        padding: 4.4rem 4.3rem 4.8rem 4.2rem;
+        max-width: 73rem;
+    }
+    .description {
+        display: flex;
+        gap: 12rem;
+    }
+    .sectionStart {
+        gap: 3.7rem;
+    }
+    .sum {
+        margin-left: 15.22rem;
+    }
+    #bio {
+        margin-top: 0;
+        padding-right: 8.3rem;
+    }
+    #switch , #submit {
+        cursor: pointer;
+    }
+    .user:focus {
+        outline: 0;
+    }
+    #switch:hover .dark , #switch:hover .moon {
+        color: #222731;
+        fill: #222731;
+    }
+    #submit:hover {
+        background-color: #60ABFF;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
